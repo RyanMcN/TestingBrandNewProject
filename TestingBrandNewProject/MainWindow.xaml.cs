@@ -24,5 +24,10 @@ namespace TestingBrandNewProject
         {
             InitializeComponent();
         }
+
+        private void buttonOne_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("HelloWorld!!!");
+        }
     }
 }
