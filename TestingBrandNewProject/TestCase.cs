@@ -16,10 +16,12 @@ namespace TestingBrandNewProject
         [Test]
        public void methodTest()
         {
-
-            Assert.Pass();
-           // Assert.Greater(a, b);
-
+            int x = 7;
+            int y = 5;
+            MessageBox.Show("Testing123");
+            //Assert.Pass();
+            Assert.Greater(x, y);
+            
            
         }
     }

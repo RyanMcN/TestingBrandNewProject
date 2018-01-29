@@ -17,7 +17,7 @@ using System;
 using System.Linq;
 using System.Collections;
 using System.Collections.Generic;
-
+using NUnit.Framework;
 namespace TestingBrandNewProject
 {
     /// <summary>
@@ -30,11 +30,17 @@ namespace TestingBrandNewProject
             InitializeComponent();
         }
 
+        
         private void buttonOne_Click(object sender, RoutedEventArgs e)
         {
             int A = Int32.Parse(Tboxx1.Text);
-            int B = Int32.Parse(Tboxx1.Text);
+            int B = Int32.Parse(Tboxx2.Text);
+            
             TestCase justATest = new TestCase();
+            A = 7;
+            B = 5;
+            justATest.methodTest();
+            //justATest.methodTest(A, B);
             //MessageBox.Show("HelloWorld!!!");
         }
     }
