@@ -13,6 +13,11 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
+using System;
+using System.Linq;
+using System.Collections;
+using System.Collections.Generic;
+
 namespace TestingBrandNewProject
 {
     /// <summary>
@@ -27,7 +32,10 @@ namespace TestingBrandNewProject
 
         private void buttonOne_Click(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("HelloWorld!!!");
+            int A = Int32.Parse(Tboxx1.Text);
+            int B = Int32.Parse(Tboxx1.Text);
+            TestCase justATest = new TestCase();
+            //MessageBox.Show("HelloWorld!!!");
         }
     }
 }
